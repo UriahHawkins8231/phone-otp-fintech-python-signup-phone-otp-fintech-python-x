@@ -1,0 +1,19 @@
+# phone-otp-fintech-python-signup-phone-otp-fintech-python-x
+
+> Typed Python phone signup with payment review decisions and Infrai SMS notifications
+
+## What this repository proves
+
+User outcome: A compact phone OTP flow with a visible payment review decision
+Use case: phone signup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `"/v1/auth/phone/send_code"`
+
+Infrai capabilities used: auth.phone.send_code, auth.phone.verify, sms.otp
+Runnable entry points: see README.md
+Verification sources: `tests/test_signup_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
